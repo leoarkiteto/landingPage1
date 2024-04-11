@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link href="/vite.svg" rel="icon" type="image/svg+xml" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Landing page</title>
+</head>
+<body>
+<main class="container-fluid py-2 px-md-5 bg-hero">
+	<nav class="navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand mx-auto mx-md-0" href="/">
+				<img alt="" src="/img/logo-occitanie%20(1).svg" width="200">
+			</a>
+		</div>
+	</nav>
+	<div class="row gap-5 justify-content-between">
+		<!-- Form  -->
+		<div
+			class="col-12 order-last order-lg-first col-lg-5 rounded-4 px-3 bg-white py-4 mb-2 shadow"
+			id="simulateur"
+		>
+			<!-- Title  -->
+			<div class="text-center mb-4">
+				<h3 class="title">Un conseiller region a votre disposition</h3>
+				<small
+				>Remplissez le formulaire pour qu'un consellier etudie votre
+					projet.</small>
+			</div>
+			<!-- Inputs  -->
+			<form action=""
+				method="POST">
+				<input name="_zipcode_country"
+					type="hidden"
+					value="FRA" />
+				<div class="row">
+					<div class="col-md-6">
+						<!-- Vous habitez  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="house_type"
+							>Vous habitez</label>
+							<select class="form-select"
+								id="house_type"
+								name="house_type"
+								required
+							>
+								<option disabled
+									selected
+									value="">Vous habitez
+								</option>
+								<option value="house">Une maison</option>
+								<option value="apartment">Un appartement</option>
+							</select>
+						</div>
+						<!-- Vous etes  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="house_ownership_type"
+							>Vous êtes</label>
+							<select class="form-select "
+								id="house_ownership_type"
+								name="house_ownership_type"
+								required
+							>
+								<option disabled
+									selected
+									value="">Vous êtes
+								</option>
+								<option value="owner">Propriétaire</option>
+								<option value="tenant">Locataire</option>
+							</select>
+						</div>
+						<!-- Type de chauffage  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="heater_type"
+							>Type de chauffage actuel</label>
+							<select class="form-select "
+								id="heater_type"
+								name="heater_type"
+								required
+							>
+								<option disabled
+									selected
+									value="">
+									Type de chauffage
+								</option>
+								<option value="gas">Gaz</option>
+								<option value="fuel_oil">Fioul</option>
+								<option value="electric">Electrique</option>
+								<option value="wood">Bois/Grannulé</option>
+								<option value="other">Autre</option>
+							</select>
+						</div>
+						<!-- Facture annuelle  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="heating_bill"
+							>Votre facture annuelle de chauffage</label>
+							<select class="form-select "
+								id="heating_bill"
+								name="heating_bill"
+								required
+							>
+								<option disabled
+									selected
+									value="">
+									Montant annuel de votre facture
+								</option>
+								<option value="under_1400">Moins de 1400€</option>
+								<option value="1400_1600">De 1400 à 1600€</option>
+								<option value="1600_1800">De 1600€ à 1800€</option>
+								<option value="1800_2000">De 1800€ à 2000€</option>
+								<option value="over_2000">Plus de 2000€</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<!-- Nom & Prenom  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="name">Nom & Prénom</label>
+							<input class="form-control "
+								id="name"
+								name="name"
+								required
+								type="text"
+							/>
+						</div>
+						<!-- Telephone  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="phone"
+							>Numéro de téléphone</label
+							>
+							<input class="form-control "
+								id="phone"
+								name="phone"
+								required
+								type="text"
+							/>
+						</div>
+						<!-- Email  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="email">Email</label>
+							<input class="form-control "
+								id="email"
+								name="email"
+								required
+								type="email"
+							/>
+						</div>
+						<!-- Code postal  -->
+						<div class="mb-3">
+							<label class="form-label"
+								for="zipcode">Code postal</label>
+							<input class="form-control "
+								id="zipcode"
+								name="zipcode"
+								required
+								type="text"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn-lg w-fit mx-auto btn-success my-3 mx-auto"
+					type="submit"
+				>Découvrir le montant de mes aides
+				</button>
+			</form>
+		</div>
+		<!-- Hero -->
+		<div class="col-12 col-lg-5 text-white">
+			<p>annuaire destine aux habitants d'occitanie</p>
+			<h1 class="fs-1 title">Votre espace conseil pour vos accompagner dans
+				l'obtention de vos aides a la renovation energetique.</h1>
+			<p
+				class="ps-2 border-start border-3 border-success bg-opacity-25  py-2 bg-success">
+				Beneficiez d'un accompagnement local gratuit et decouvres toutues les
+				aides auxquelles vous avez droit des maintenant.</p>
+			<p>Retrouvez ci-dessous notre simulateur utilisant les baremes
+				officiels a jour des aides nationales et regionales</p>
+
+			<button class="btn btn-lg btn-success">Je simule mes aides</button>
+		</div>
+	</div>
+</main>
+
+<section class="container py-5 px-3 mx-auto">
+	<h2
+		class="title fs-1 ps-2 border-start border-4 border-success bg-opacity-25  py-2 bg-success">
+
+		>Synthese des aides a la renovation en 2024</h2>
+	<div class="row">
+		<div class="col-12">
+			<table class="table table-striped-columns">
+
+			</table>
+		</div>
+
+		<div class="col-12">
+			<p>Subventions publiques et privées : Il y a d'une part les subventions
+				publiques dépendant des ressources (avec une couverture très étendue) et
+				d'autre part les aides privées, généralement accessibles à tous.</p>
+			<p>Subventions et encouragements : Il est crucial de différencier ces deux
+				aspects. Les « subventions » offrent un soutien financier
+				(MaPrimeRénov’, CEE) tandis que les « encouragements » sont là pour
+				stimuler votre investissement (prêts, TVA à taux réduit).</p>
+			<p>Subventions en fonction des revenus : Pour déterminer son revenu
+				fiscal, il suffit de consulter votre avis d’imposition récent, dans le
+				cadre situé en haut à gauche.
+			</p>
+			<p>Les niveaux de revenus sont répartis en 4 groupes : très faibles,
+				faibles, médians, élevés. On les associe souvent à une couleur pour
+				simplifier les procédures. Respectivement : bleu, jaune, violet,
+				rose.</p>
+		</div>
+
+		<div class="col-12">
+			<table></table>
+			<a class="btn w-fit mx-auto btn-lg btn-success my-5" href="#simulateur">un
+				projet de
+				renovation
+				energetique?<br /><span>Faites appel a un conseiller region</span>
+			</a>
+		</div>
+
+		<div class="col-12">
+			<p>Prévenir les excès : Lorsque plusieurs soutiens financiers sont
+				combinés, une partie non couverte demeure, soit 10% (pour les revenus
+				les plus bas), 25% (bas), 40% (moyens) ou 60% (hauts). Cela garantit une
+				participation en accord avec les moyens de chacun et évite des
+				propositions excessivement séduisantes comme « pompe à chaleur à 1€ »
+				qui pourraient compromettre la qualité du service.</p>
+			<p>Retrouvez ci-dessous les cumuls d'aides possibles :</p>
+			<table></table>
+			<p>Mettre en avant les professionnels qualifiés : Il est essentiel de
+				s'adresser à un intervenant RGE (Reconnu Garant de l'environnement). Une
+				évaluation préalable sur site est nécessaire pour proposer une réponse
+				adaptée au logement.</p>
+			<p>Priorité aux demeures de plus d'âge : Les soutiens financiers visent
+				principalement les résidences principales de plus de 15 ans et occupées
+				au minimum 8 mois dans l'année. Cependant, une exception est faite pour
+				la substitution des chaudières au fioul, où les habitations de plus de 2
+				ans sont concernées. Quant aux aides privées, elles concernent les
+				domiciles âgés de plus de 2 ans, qu'ils soient principaux ou
+				secondaires.</p>
+			<p>Insistance sur la modernisation « globale » : Les subventions
+				encouragent des interventions conjointes plutôt que des actions
+				ponctuelles. Les recherches montrent qu'une refonte totale en une étape
+				unique est la voie idéale pour atteindre une efficacité maximale. Une
+				préparation rigoureuse évite par ailleurs les désagréments à l'intérieur
+				de la maison.</p>
+			<p>Par exemple, si vous remplacez vos fenêtres sans anticiper une
+				isolation extérieure future, la perspective d'un cadre « plus large » ne
+				sera pas prise en compte. La future isolation ne sera pas parfaitement
+				conforme à la fenêtre. Ceci pourrait provoquer une fuite thermique
+				(rupture de l’isolation) et causer des soucis de condensation à cet
+				endroit.</p>
+			<p>Comme vous pouvez le constater, sélectionner les options optimales et
+				bénéficier de toutes les aides disponibles n'est pas une mince affaire.
+				En sollicitant l'expertise d'un conseiller de votre région, vous serez
+				guidé efficacement à travers vos démarches et la mise en œuvre de vos
+				projets de rénovation énergétique.</p>
+		</div>
+
+		<div class="col-12">
+			<a class="btn btn-lg w-fit mx-auto my-5 btn-success" href="#simulateur">Je
+				sollicite un
+				conseiller region
+				<br /> et beneficie de toutes les aides disponibles
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="container rounded-lg-4 bg-success py-5 px-3 mx-auto">
+	<div class="row">
+		<div class="col-12 col-lg">
+			<div class="d-flex flex-column align-items-center text-white">
+				<img alt="" src="/img/icon-pig.svg">
+				<p class="mb-0 title">Des economies d'energie</p>
+				<p>jusqu'a 70%</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg">
+			<div class="d-flex flex-column align-items-center text-white">
+				<img alt="" src="/img/icon-smiley-happy.svg">
+				<p class="mb-0 title">Amelioration du confort</p>
+				<p>de votre habitat</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg">
+			<div class="d-flex flex-column align-items-center text-white">
+				<img alt="" src="/img/icon-house.svg">
+				<p class="mb-0 title">Rehauser la valeur</p>
+				<p>de votre bien</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg">
+			<div class="d-flex flex-column align-items-center text-white">
+				<img alt="" src="/img/icon-ecology.svg">
+				<p class="mb-0 title">Chauffage ecologique</p>
+				<p>pour preserver la planete</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="container py-5 px-3 mx-auto">
+	<div class="row py-5 align-items-center">
+		<div
+			class="col-6 col-lg mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-anah.svg">
+		</div>
+
+		<div
+			class="col-6 col-lg mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-france-relance.svg">
+		</div>
+
+		<div class="col  mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-cee.svg">
+		</div>
+
+		<div
+			class="col-6 col-lg mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-francerenov.svg">
+		</div>
+
+		<div
+			class="col-6 col-lg mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-ministere-ecologie.svg">
+		</div>
+
+		<div class="col mb-5 d-flex justify-content-center align-items-center">
+			<img alt="" src="/img/logo-ma-prime-renov-2.svg">
+		</div>
+	</div>
+</section>
+
+<section class="container py-5 px-3 mx-auto">
+	<h2
+		class="title fs-1 ps-2 border-start border-4 border-success bg-opacity-25 mb-5 py-2 bg-success"
+	>>Estimatif des economies
+		realisees
+		grace a
+		l'installation
+		d'une pompe a chaleur</h2>
+	<div class="row gap-5 text-center justify-content-lg-center">
+		<div class="col-12 col-lg-3">
+			<div
+				class="border text-center border-primary p-4 rounded-4 d-flex flex-column align-items-center">
+				<small> a 100m2</small>
+				<p class="title fs-1">≈ 700 €</p>
+				<p class="mb-0">Un materiel de marque garanti</p>
+				<p>Une installation de qualite RGE</p>
+				<a class="btn my-3 btn-outline-primary" href="#simulateur">Calculez vos
+					droits
+					reels
+				</a>
+				<small class="text-muted">L'économie présentée est une évaluation
+					approximative et peut
+					varier d'un logement à un autre.</small>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg-3">
+			<div
+				class="bg-primary text-white p-4 rounded-4 d-flex flex-column align-items-center">
+				<small>100 à 200m2</small>
+				<p class="title fs-1">≈ 1 300 €</p>
+				<p class="mb-0">Un materiel de marque garanti</p>
+				<p>Une installation de qualite RGE</p>
+				<a class="btn btn-outline-light my-3" href="#simulateur">Calculez vos
+					droits
+					reels
+				</a>
+				<small class="text-muted">L'économie présentée est une évaluation
+					approximative et peut
+					varier d'un logement à un autre.</small>
+			</div>
+		</div>
+
+		<div class="col-12 col-lg-3">
+			<div
+				class="border border-primary p-4 rounded-4 d-flex flex-column align-items-center">
+				<small> à 200m2</small>
+				<p class="fs-1 title">≈ 1 900 €</p>
+				<p class="mb-0">Un materiel de marque garanti</p>
+				<p>Une installation de qualite RGE</p>
+				<a class="my-3 btn btn-outline-primary" href="#simulateur">Calculez vos
+					droits
+					reels
+				</a>
+				<small class="text-muted">L'économie présentée est une évaluation
+					approximative et peut
+					varier d'un logement à un autre.</small>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="container py-5 px-3 mx-auto">
+	<h2
+		class="title fs-1 ps-2 border-start border-4 border-success bg-opacity-25 mb-5 py-2 bg-success"
+	>>Simulez le montant des aides
+		auquelles vous
+		avez droit</h2>
+
+	<div class="row justify-content-center">
+		<div class="col-12">
+			<p class="text-center">Le simulateur est en maintenance afin d'intégrer
+				les
+				nouvelles
+				règles
+				de calcul.
+				Pour obtenir une simulation précise de vos droits (à jour avril 2024),
+				il est préférable de faire appel à un conseiller régional (service
+				gratuit).</p>
+		</div>
+
+		<div class="col-12">
+			<a class="btn btn-lg mx-auto w-fit my-5 text-center btn-success"
+				href="#simulateur">Je
+				sollicite un
+				conseiller
+				region</a>
+		</div>
+	</div>
+</section>
+
+<footer class="bg-success">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center p-5">
+				<p class="text-white">
+					Simulez votre éligibilité aux subventions Pompe à Chaleur et
+					planifiez votre installation
+				</p>
+				<p class="text-white">
+					Copyright © <span class="year"></span> Tous droits réservés
+				</p>
+				<small class="text-muted">Ce site a pour but de fournir une aide aux
+					utilisateurs pour connaître les aides auxquelles ils sont éligibles
+					pour améliorer l'isolation ou le chauffage de leur maison. Ce site
+					n'est en aucun cas affilié à l'état français, régions, département, ou
+					tout autre organisme public. Après avoir rempli le formulaire un
+					conseiller vous rappellera pour valider votre demande et vous
+					confirmer avec exactitide les aides auxquelles vous êtes
+					éligibles.</small>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="/main.js" type="module"></script>
+</body>
+</html>
